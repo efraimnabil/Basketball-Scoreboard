@@ -44,17 +44,14 @@ function EndGame(){
     if(homeScore > awayScore){
         document.getElementById("home").style.backgroundColor = "green";
         document.getElementById("away").style.backgroundColor = "red";
-        alert("Home team wins!");
     }
     else if(homeScore < awayScore){
         document.getElementById("home").style.backgroundColor = "red";
         document.getElementById("away").style.backgroundColor = "green";
-        alert("Away team wins!");
     }
     else{
         document.getElementById("home").style.backgroundColor = "yellow";
         document.getElementById("away").style.backgroundColor = "yellow";
-        alert("It's a tie!");
     }
     document.getElementById("btn-one").disabled = true;
     document.getElementById("btn-two").disabled = true;
