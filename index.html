@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Basketball Scoreboard</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "column" id = "home">
+            <h3> Home </h3>
+            <h2 class = "score" id = "home-score"> 0 </h2>
+            <div class = "btns">
+                <button class = "btn" id = "btn-one" onclick = "IncreaseHomeOne()"> +1 </button>
+                <button class = "btn" id = "btn-two" onclick = "IncreaseHometwo()"> +2 </button>
+                <button class = "btn" id = "btn-three" onclick = "IncreaseHomeThree()"> +3 </button>
+            </div>
+        </div>
+        <div class = "column" id = "away">
+            <h3> Away </h3>
+            <h2 class = "score" id = "away-score"> 0 </h2>
+            <div class = "btns">
+                <button class = "btn" id = "btn-four" onclick = "IncreaseAwayOne()"> +1 </button>
+                <button class = "btn" id = "btn-five" onclick = "IncreaseAwayTwo()"> +2 </button>
+                <button class = "btn" id = "btn-six" onclick = "IncreaseAwayThree()"> +3 </button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class = "btn" onclick = "Reset()"> Reset </button>
+        <button class = "btn" id = "btn-end" onclick = "EndGame()"> End Game </button>
+    </div>
+    <div class = "footer">
+        <p> Made by: <a href = "https://www.linkedin.com/in/efraimnabil/"> Efraim Nabil </a> </p>
+    </div>
+    <script src = "index.js"> </script>
+</body>
+</html>
