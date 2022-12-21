@@ -1,28 +1,14 @@
 let homeScore = 0;
 let awayScore = 0;
-function IncreaseHomeOne(){
-    homeScore++;
-    document.getElementById("home-score").innerHTML = homeScore;
-}
-function IncreaseHometwo(){
-    homeScore+=2;
-    document.getElementById("home-score").innerHTML = homeScore;
-}
-function IncreaseHomeThree(){
-    homeScore+=3;
-    document.getElementById("home-score").innerHTML = homeScore;
-}
-function IncreaseAwayOne(){
-    awayScore++;
-    document.getElementById("away-score").innerHTML = awayScore;
-}
-function IncreaseAwayTwo(){
-    awayScore+=2;
-    document.getElementById("away-score").innerHTML = awayScore;
-}
-function IncreaseAwayThree(){
-    awayScore+=3;
-    document.getElementById("away-score").innerHTML = awayScore;
+function Increase(team, score) {
+    if (team === "home") {
+        homeScore += score;
+        document.getElementById("home-score").innerHTML = homeScore;
+    }
+    else if (team === "Away") {
+        awayScore += score;
+        document.getElementById("away-score").innerHTML = awayScore;
+    }
 }
 function Reset(){
     homeScore = 0;
