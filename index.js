@@ -1,7 +1,7 @@
 let homeScore = 0;
 let awayScore = 0;
 function Increase(team, score) {
-    if (team === "home") {
+    if (team === "Home") {
         homeScore += score;
         document.getElementById("home-score").innerHTML = homeScore;
     }
